@@ -1,19 +1,20 @@
 #include <stdio.h>
 /**
  * calculates the average marks of five students
+ * Or more depending on your mood if it swings
  */
 int main()
 {
 	float avg, sum = 0;
 	int i;
-	int marks [5];
+	float marks [5];
 	
-	for (i=0; i<=4; i++)
+	for (i=0; i<5; i++)
 	{
 		printf("Enter marks\n");
-		scanf("%d", &marks[i]);
+		scanf("%2f", &marks[i]);
 	}
-	for (i=0; i<=4; i++)
+	for (i=0; i<5; i++)
 	{
 		sum = sum + marks[i];
 	}
@@ -23,4 +24,5 @@ int main()
 
 	return 0;
 }
+
 
